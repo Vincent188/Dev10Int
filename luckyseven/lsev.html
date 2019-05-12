@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<!--
+Name: Vincent Squillace
+Date Created: 05/05/19
+Most Recent Revision: 05/05/19
+-->
+<html lang="en">
+
+<script type="text/JavaScript" src="lsev.js"></script>  <!-- Connect with JS file -->
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+<html>
+	<head>
+		<title>Lucky Seven Game</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1>Lucky Sevens</h1>
+			<form name="sevGame" onsubmit="return game();" class="form-inline"> <!--Call function Game after click play button-->
+				<div class="form-group">
+					<label for="sbetin">Starting Bet:</label>  <!--Text Field Label -->
+					<input type="number" class="form-control" id="sbetin" placeholder="$0.00"> <!--Save starting bet in sbetin variable -->
+				</div>
+			<br >
+            <button type="submit" id="submitButton" class="btn btn-default">Play</button> <!-- Play Button -->
+			</form>
+			
+			<hr />
+			
+			<table id="results" class="table table-striped" style="display:none;"> <!--Output table-->
+				<thead>
+					<tr>
+						<th>Results</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Starting Bet</td>
+						<td><span id="sbet"></span></td>
+					</tr>
+					<tr>
+						<td>Total Rolls Before Going Broke</td>
+						<td><span id="rolls"></span></td>
+					</tr>
+					<tr>
+						<td>Highest Amount Won</td>
+						<td><span id="max"></span></td>
+					</tr>
+					<tr>
+						<td>Roll Count at Highest Amount Won</td>
+						<td><span id="index"></span></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</body>
+</html>

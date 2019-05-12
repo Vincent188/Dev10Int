@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Akronim|Lato);
+body {
+	background-color: #2A2C32;
+	color: #6224b5
+	 font-family: 'Lato', sans-serif;
+}
+
+hr {
+	margin: 0px;
+	border-style: grooved;
+	border-color: #FFFFFF;
+}
+
+.jumbotron{
+	background-color: #FFFFFF;
+	font-family: 'Akronim', cursive;
+	text-align: center;
+	float: none;
+	padding-top: 0px;
+    padding-bottom: 0px;
+}
+
+.footer {
+	background-color: #0c0c0c;
+	color: #ffffff;
+	font-family: Palatino;
+	text-align: center;
+	padding: 15px;
+}
+.nav {
+	background-color: #0c0c0c;
+}
+.header {
+	background-color: #0c0c0c;
+	color: #FFFFFF;
+	font-family: 'Akronim', cursive;
+	text-align: center;
+	padding: 15px;
+}
+form label{
+  font-weight:bold;
+}
+a:link {
+	color: #ffffff;
+}
+a:visited {
+	color: #0245d6;
+}
+a:hover {
+	color: #8e0c0c;
+	font-weight: bolder;
+}
+a:active {
+	color: #2A2C32;
+	text-decoration: none;
+}
